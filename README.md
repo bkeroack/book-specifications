@@ -1,7 +1,7 @@
 ## Kubernetes Book Project
 
 ### Specifications
-The project should be small enough to do in a fairly eaily and in a small amount of time, but also extensive enough to showcase core concepts of Kubernetes and microservice architectures in general. This is my attempt at a project that covers both of these aspects, but feel free to make suggestions and modifications.
+The project should be small enough to do fairly easily and in a small amount of time, but also extensive enough to showcase core concepts of Kubernetes and microservice architectures in general. This is my attempt at a project that covers both of these aspects, but feel free to make suggestions and modifications.
 
 #### Service #1: Authentication Service
 Nearly all applications require some sort of authentication mechanism. Since we want all our services to be stateless, we should go with a token-based authentication mechanism. This gives us service #1, the authentication service, which is responsible for the issuing, validation, and invalidation of access tokens. Access tokens should be created through the JWT standard, where you have a token encoded with an issuer key and issuer secret that ensures the token only came from your (trusted) service. The token can also be encoded with basic user information and permission scopes. An example is given below:

@@ -23,7 +23,7 @@ This service is responsible for the ability to list and generate tweets (and als
 - `GET /tweets` Get all your tweets.
 - `POST /tweets/:tweet_id/retweet` Retweet a tweet.
 
-Note that I am the only 23 year-old on the planet who doesn't who what twitter is or how it works.
+Note that I am the only 23 year-old on the planet who doesn't understand what twitter is or how it works.
 
 ### Service #3: Email Service
 

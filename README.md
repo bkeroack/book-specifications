@@ -25,7 +25,7 @@ This service is responsible for the ability to list and generate tweets (and als
 
 Note that I am the only 23 year-old on the planet who doesn't understand what twitter is or how it works.
 
-### Service #3: Email Service
+#### Service #3: Email Service
 
 This service is responsible for sending emails when tweets are retweeted. Instead of calling the email service through REST from the tweet service, we can simply use `Redis` pubsub or something similar to do asynchronous messaging. Whenever a tweet is created, it broadcasts a `tweet-retweeted` event that this service listens into. There is a small database of user ids mapped to email settings. The end result is that users get an email notification when their tweets are retweeted (if they opt in).
 
